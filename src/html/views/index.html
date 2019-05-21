@@ -1,55 +1,13 @@
 <% var data = {
   title: "Скупка ЖК телевизоров в Волгограде",
-  tel: "+7 999 999 999",
-  description: "лписание первой старницы changed",
+  tel: "+7(906)307-87-25",
+  description: "Если у вас сломался жк телевизор, то воспользуйтесь услугой скупки. Наша фирма занимается скупкой жк телевизоров отечественных и иностранных марок. Своим клиентам мы предлагаем высокую цену на сломанный ТВ.",
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
 <div class="container-fluid">
   <div class="row mt-3">
-    <div class="col-md-1 d-none d-lg-block"></div>
-    <div class="col-md-6 col-lg-8">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 d-none d-lg-block text-md-center"><img src="img/tv1.jpg" alt=""></div>
-        <div class="col-md-12 col-lg-4 text-center"><img src="img/tv2.jpg" alt=""></div>
-        <div class="col-lg-4 d-none d-lg-block text-md-center"><img src="img/tv3.jpg" alt=""></div>
-        <div class="col-12 text-center">
-          <h1 class="under_tv">Скупка разбитых, неисправных жидкокристаллических, LCD, LED и плазменных телевизоров</h1>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-2 mt-4 mt-md-0">
-      <form class="text-center">
-        <div class="form-group">
-          <label for="exampleInputName">Заработай на своем сломанном телевизоре!</label>
-          <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
-            placeholder="Ваше имя">
-          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-        </div>
-        <div class="form-group">
-          <input type="tel" class="form-control" id="exampleInputTel" placeholder="Ваш номер телефона" name="tel"
-            pattern="2[0-9]{3}-[0-9]{3}">
-        </div>
-        <button type="submit" class="btn btn-primary btn-lg w-100">ПРОДАТЬ ТВ</button>
-      </form>
-    </div>
-    <div class="col-md-1 d-none d-lg-block"></div>
-    <div class="col-12 text-center my-4">
-      <h3 class="font-weight-bold"> 4 простых шага продать свой телевизор:</h3>
-    </div>
-    <div class="col-sm-12 col-md-3 text-center">
-      <h4><span>1) Узнайте цену</span> <br> Оставьте заявку или позвоните</h4>
-    </div>
-    <div class="col-sm-12 col-md-3 text-center">
-      <h4><span>2) Привозите к нам</span> <br>или вызывайте специалиста</h4>
-    </div>
-    <div class="col-sm-12 col-md-3 text-center">
-      <h4><span>3) Подпишем договор</span><br>Возьмите с собой паспорт</h4>
-    </div>
-    <div class="col-sm-12 col-md-3 text-center">
-      <h4><span>4) Получите деньги</span> <br>Сразу на руки всю сумму </h4>
-    </div>
-    <div class="col-1"></div>
+    <%= _.template(require('./../includes/under_header.html'))(data) %>
     <main class="col-10">
       <h2>Вас интересует скупка телевизоров на запчасти?</h2>
       <p>
@@ -64,8 +22,8 @@
         административного помещения и пр. <br><br> И все отлично, пока телевизор работает без сбоев и удовлетворяет
         качеством
         картинки своего владельца. <br><br> Но как только техника ломается или устаревает, владелец не знает, что дальше
-        делать с
-        ней. Именно для таких случаев действует скупка жк телевизоров.
+        с
+        ней делать. Именно для таких случаев действует скупка жк телевизоров.
         <br><br>
         Мы принимаем:
         <ul>
@@ -135,7 +93,9 @@
       </p>
       </ul>
     </main>
+    <%= _.template(require('./../includes/content__zayavka.html'))(data) %>
     <div class="col-1"></div>
   </div>
+</div>
 
-  <%= _.template(require('./../includes/footer.html'))(data) %>
+<%= _.template(require('./../includes/footer.html'))(data) %>

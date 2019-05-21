@@ -32,13 +32,13 @@ body {
   }
 
   header {
-    background-color: $darkblue;
     height: 3rem;
     font-size: 1.5rem;
   }
 
   header .row {
-    line-height: 3rem
+    line-height: 3rem;
+    background-color: $darkblue;
   }
 
   #navbarSupportedContent>ul>li>a {
@@ -61,7 +61,7 @@ body {
     color: $darkblue;
   }
 
-  h1.under_tv {
+  .under_tv {
     margin-top: 5rem;
     font-size: 1.5em;
     color: $darkblue;
@@ -71,12 +71,12 @@ body {
     color: $darkblue;
   }
 
-  h4 {
+  .h4 {
     color: $darkblue;
     line-height: 2em;
   }
 
-  h4>span {
+  .h4>span {
     font-weight: 600;
   }
 
@@ -89,6 +89,17 @@ body {
     color: white;
   }
 
+  footer a {
+    font-size: 1.5em;
+    color: white
+  }
+
+  footer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  /*ScrollTop*/
   div.scrollup {
     position: fixed;
     /* фиксированная позиция */

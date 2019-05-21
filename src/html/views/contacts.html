@@ -1,12 +1,33 @@
 <% var data = {
-  title: "Второй заголовок | Проект",
-  description: "лписание contacts старницы changed",
-  tel: "+7 999 999 999"
+  title: "Контакты Скупка34.ru",
+  description: "Контактные данные скупки телевизоров Скупка34. На странице найдете адрес, телефон и карту проезда.",
+  tel: "+7(906)307-87-25",
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<div class="container">
-  Контакты
-</div>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <main class="col-12">
+      <h1>
+        Контакты:
+      </h1>
+      <p class="text-center">
+        г.Волгоград <br>ул. Cанаторная 4б
+        <br> <b> (обязательно предварительно позвонить)</b> <br>
+        Режим работы: <br>
+        Пн. – Пт: с 10.00 до 19.00 <br> Сб: с 10.00 до 16.00
+        <br> Вс: –
+        выходной
+        <br>Телефон: <a href="tel:+79063078725">+7(906)307-87-25</a> <br>E-mail: <a
+          href="mailto:skypka34.ru@yandex.ru">skypka34.ru@yandex.ru</a>
+      </p>
+    </main>
+    <section class="col-12">
 
-<%= _.template(require('./../includes/footer.html'))(data) %>
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac2d1a4c52115f2915f5b05bb9cd673fa104b27a99b4fe1bce0b5618743c73cc&amp;width=100%25&amp;height=456&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </section>
+  </div>
+
+  <%= _.template(require('./../includes/footer.html'))(data) %>

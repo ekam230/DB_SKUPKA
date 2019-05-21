@@ -1,12 +1,25 @@
 <% var data = {
-    title: "Второй заголовок | Проект",
-    description: "лписание second старницы changed",
-    tel: "+7 999 999 999"
+    title: "Скупка БУ LED телевизоров в Волгограде",
+    description: "Не знаете куда деть свой старый жк телевизор? Мы с удовольствем купим его по максимально высокой цене. ",
+    tel: "+7(906)307-87-25",
   }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<div class="container">
-    Вторая страница.
+<div class="container-fluid">
+  <div class="row mt-3">
+    <%= _.template(require('./../includes/under_header.html'))(data) %>
+    <main class="col-10">
+      <h1>Покупаем БУ ЖК телевизоры</h1>
+      <p>
+        <img src="img/bu_led.jpg" alt="БУ ЖК телевизор" class="rounded float-right img-fluid">
+        Ваш ЖК телевизор долго служил Вам верой и правдой, но вот пришло время обновить его. Вы уже купили новый
+        телевизор или только собираетесь это сделать. <br> Задаете себе вопрос: "Что же делать со старым
+        телевизором?"<br>
+        Ответ прост: Продать телевизор Нам. <br>Мы профессионально занимаемся скупкой телевизоров в Волгограде.
+      </p>
+    </main>
+    <%= _.template(require('./../includes/content__zayavka.html'))(data) %>
+  </div>
 </div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>

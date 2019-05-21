@@ -1,12 +1,24 @@
 <% var data = {
-    title: "Второй заголовок | Проект",
-    description: "лписание second старницы changed",
-    tel: "+7 999 999 999"
+    title: "Покупаем разбитые телевизоры в Волгограде",
+    description: "Случайно разбился телевизор? Не беда - купите новый. А старый продадите нам на запчасти. Скупка ЖК телевизоров в Волгограде. ",
+    tel: "+7(906)307-87-25",
   }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<div class="container">
-    Вторая страница.
+<div class="container-fluid">
+  <div class="row mt-3">
+    <%= _.template(require('./../includes/under_header.html'))(data) %>
+    <main class="col-12">
+      <h1>Скупка разбитых телевизоров</h1>
+      <p class="text-center"> <iframe width=80% height="519" src="https://www.youtube.com/embed/1e0mKAAKvbU"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <br>
+        Случайно разбили свой ЖК телевизор? <br> Оставьте заявку и мы приедем и купим его по максимально высокой цене.
+      </p>
+    </main>
+    <%= _.template(require('./../includes/content__zayavka.html'))(data) %>
+  </div>
 </div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
