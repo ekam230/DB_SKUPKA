@@ -1,0 +1,12 @@
+<% var data = {
+    title: "Второй заголовок | Проект",
+    description: "лписание second старницы changed",
+    tel: "+7 999 999 999"
+  }; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+    Вторая страница.
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
