@@ -20,116 +20,121 @@ $blue-footer:#022765;
 
 body {
   font-family: $font-stack;
+}
 
-  #logo {
-    width: 10rem;
+#logo {
+  width: 10rem;
+}
+
+.container {
+  img {
+    width: 20rem;
   }
+}
 
-  .container {
-    img {
-      width: 20rem;
-    }
-  }
+header {
+  height: 3rem;
+  font-size: 1.5rem;
+}
 
+header .row {
+  line-height: 3rem;
+  background-color: $darkblue;
+}
+
+#navbarSupportedContent>ul>li>a {
+  color: $blue;
+}
+
+#navbarSupportedContent>ul>a {
+  color: $blue;
+}
+
+#navbarSupportedContent>ul>a:active,
+#navbarSupportedContent>ul>a:hover {
+  background-color: $darkblue;
+  color: white;
+}
+
+.form-group>label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $darkblue;
+}
+
+.under_tv {
+  margin-top: 5rem;
+  font-size: 1.5em;
+  color: $darkblue;
+}
+
+h3 {
+  color: $darkblue;
+}
+
+.h4 {
+  color: $darkblue;
+  line-height: 2em;
+}
+
+.h4>span {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: $darkblue;
+  color: white;
+}
+
+footer a {
+  font-size: 1.5em;
+  color: white
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*ScrollTop*/
+div.scrollup {
+  position: fixed;
+  /* фиксированная позиция */
+  color: #fff;
+  /* цвет текста */
+  background-color: #286090;
+  /* цвет заднего фона */
+  right: 20px;
+  /* расстояние от правого края */
+  bottom: 0px;
+  /* расстояние от нижнего края */
+  padding: 4px 10px;
+  /* отступы до содержимого блока */
+  font-size: 20px;
+  /* размер шрифта (иконки) */
+  border-top-left-radius: 4px;
+  /* скругление верхнего левого угла */
+  border-top-right-radius: 4px;
+  /* скругление верхнего правого угла */
+  cursor: pointer;
+  /* форма курсора */
+  display: none;
+  /* не отображать элемент */
+  text-align: center;
+  /*выравнивание содержимого элемента по центру */
+}
+
+div.scrollup:hover {
+  background-color: #000;
+  /* цвет заднего фона при наведении */
+}
+
+@media (max-width: 620px) {
   header {
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 4em;
   }
-
-  header .row {
-    line-height: 3rem;
-    background-color: $darkblue;
-  }
-
-  #navbarSupportedContent>ul>li>a {
-    color: $blue;
-  }
-
-  #navbarSupportedContent>ul>a {
-    color: $blue;
-  }
-
-  #navbarSupportedContent>ul>a:active,
-  #navbarSupportedContent>ul>a:hover {
-    background-color: $darkblue;
-    color: white;
-  }
-
-  .form-group>label {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: $darkblue;
-  }
-
-  .under_tv {
-    margin-top: 5rem;
-    font-size: 1.5em;
-    color: $darkblue;
-  }
-
-  h3 {
-    color: $darkblue;
-  }
-
-  .h4 {
-    color: $darkblue;
-    line-height: 2em;
-  }
-
-  .h4>span {
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  footer {
-    background-color: $darkblue;
-    color: white;
-  }
-
-  footer a {
-    font-size: 1.5em;
-    color: white
-  }
-
-  footer a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-
-  /*ScrollTop*/
-  div.scrollup {
-    position: fixed;
-    /* фиксированная позиция */
-    color: #fff;
-    /* цвет текста */
-    background-color: #286090;
-    /* цвет заднего фона */
-    right: 20px;
-    /* расстояние от правого края */
-    bottom: 0px;
-    /* расстояние от нижнего края */
-    padding: 4px 10px;
-    /* отступы до содержимого блока */
-    font-size: 20px;
-    /* размер шрифта (иконки) */
-    border-top-left-radius: 4px;
-    /* скругление верхнего левого угла */
-    border-top-right-radius: 4px;
-    /* скругление верхнего правого угла */
-    cursor: pointer;
-    /* форма курсора */
-    display: none;
-    /* не отображать элемент */
-    text-align: center;
-    /*выравнивание содержимого элемента по центру */
-  }
-
-  div.scrollup:hover {
-    background-color: #000;
-    /* цвет заднего фона при наведении */
-  }
-
 }
