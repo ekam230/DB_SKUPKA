@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+Host: skypka34.ru
+Sitemap: https://skypka34.ru/sitemap.xml
