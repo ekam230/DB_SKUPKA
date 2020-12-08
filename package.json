@@ -13,31 +13,31 @@
     "clear": "del-cli dist"
   },
   "dependencies": {
-    "bootstrap": ">=4.3.1",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.14.4"
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "babel-loader": "^8.0.4",
-    "copy-webpack-plugin": "^4.5.4",
-    "css-loader": "^1.0.0",
-    "cssnano": "^4.1.7",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.4.0",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.10",
     "del-cli": "^1.1.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "html-cli": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "lodash": ">=4.17.19",
-    "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.13.1",
+    "lodash": "^4.17.20",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0",
-    "tar": ">=4.4.2",
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.11"
+    "sass-loader": "^7.3.1",
+    "tar": "^6.0.5",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
